@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        wordi
+    <script src="BJSpell.js"></script>
+    <script src="dic_en_US.js"></script>
+    <script>
+        let dictionary = 'https://rawcdn.githack.com/maheshmurag/bjspell/master/dictionary.js/en_US.js'
+        let word = document.getElementById('para').innerText;
+        let lang = BJSpell(dictionary, () => {   
+        })
+        console.log(lang.suggest(word, 5))
+    </script>
+</body>
+</html>
